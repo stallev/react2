@@ -8,7 +8,6 @@ class GoodsItem extends Component {
       count: 0
     }
     this.onAddItemToBasket = this.onAddItemToBasket.bind(this);
-    let goodsCount;
   }
   onAddItemToBasket(e){
     e.preventDefault();
