@@ -7,18 +7,32 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      kind1: "firstKind",
-      kind2: "secondKind",
-      kind3: "thirdKind"
+      goods: [
+        {
+          kind: "firstKind",
+          price: 0,
+          count: 0
+        },
+        {
+          kind: "secondKind",
+          price: 0,
+          count: 0
+        },
+        {
+          kind: "thirdKind",
+          price: 0,
+          count: 0
+        }
+      ]
     }
   }
   render() {
     return (
       <div className="container">
         <div className="goods">
-          <GoodsItem kind = {this.state.kind1}/>
-          <GoodsItem kind = {this.state.kind2}/>
-          <GoodsItem kind = {this.state.kind3}/>
+          <GoodsItem kind = {this.state.goods[0].kind} count = {this.state.goods[0].count}/>
+          <GoodsItem kind = {this.state.goods[1].kind} count = {this.state.goods[1].count}/>
+          <GoodsItem kind = {this.state.goods[2].kind} count = {this.state.goods[2].count}/>
         </div>
         <div>
           <Basket/>
