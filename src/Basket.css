@@ -1,0 +1,30 @@
+.basket{
+    width: 400px;
+    min-height: 250px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: 5px solid orangered;
+    border-radius: 5px;
+}
+.basket__title{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.basket__row{
+    padding: 10px;
+}
+.basket__item-name{
+    width: 80%;
+    padding: 5px;
+    font-weight: bold;
+}
+.basket__item-count{
+    width: 10%;
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
