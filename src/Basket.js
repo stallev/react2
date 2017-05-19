@@ -15,7 +15,8 @@ class Basket extends Component {
           Корзина
         </div>
         <div className="basket__row">
-          <div className="basket__item-name"></div>
+          <div className="basket__item-name">
+          </div>
           <div className="basket__count"></div>
         </div>
       </div>
