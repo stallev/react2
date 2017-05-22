@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './GoodsItem.css';
 
 class GoodsItem extends Component {
