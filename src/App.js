@@ -9,37 +9,46 @@ class App extends Component {
     this.state = {
       goods: [
         {
+          index: 0,
           kind: "firstKind",
           price: 0,
           count: 0
         },
         {
+          index: 1,
           kind: "secondKind",
           price: 0,
           count: 0
         },
         {
+          index: 2,
           kind: "thirdKind",
           price: 0,
           count: 0
         }
-      ],
-      onIncreasingBasketCount(e, i){
-        e.preventDefault();
-        let goodsCount = this.state.goods[i].count++;
-        //this.setState({this.state.goods[i].count:goodsCount})
-        console.log(goodsCount);
-      }
-    }
+      ]
+    };
     this.onIncreasingBasketCount = this.onIncreasingBasketCount.bind(this);
   }
-  onIncreasingBasketCount(i){
+  onIncreasingBasketCount(e){
+    console.log(e);
+    //console.log(1);
+    let cardIndex = e.target.parentNode.dataset.index;
+    let updatedGoods = this.state.goods.map(function (item, cardIndex) {
+      if(item === cardIndex){
+        item.count++;
+        return item;
+      }
+      return item;
+    });
+    this.setState({goods:updatedGoods});
     // let goodsCount = this.state.goods[i].count++;
     // console.log(goodsCount);
     //this.setState({goods[i].count});
   }
   renderGoodsItem(i){
     return <GoodsItem
+      index = {this.state.index}
       kind = {this.state.goods[i].kind}
       count = {this.state.goods[i].count}
       onAdd = {this.onIncreasingBasketCount}

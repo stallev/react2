@@ -7,15 +7,9 @@ class GoodsItem extends Component {
     kind: PropTypes.string.isRequired,
     count: PropTypes.number.isRequired
   };
-  // onAddItemToBasket(e){
-  //   e.preventDefault();
-  //   //goodsCount= goodsCount++;
-  //   //this.setState({count:1});
-  //   //console.log(this.state.count);
-  // }
   render() {
     return (
-      <div className="goods-item">
+      <div className="goods-item" data-index={this.props.index}>
         <img className="goods-item__image" src="http://lorempixel.com/50/50/abstract/" alt="good item"/>
         <div className="goods-item__name">
           {this.props.kind}
