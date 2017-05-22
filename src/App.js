@@ -23,16 +23,34 @@ class App extends Component {
           price: 0,
           count: 0
         }
-      ]
+      ],
+      onIncreasingBasketCount(i){
+        let goodsCount = this.state.goods[i].count++;
+        console.log(goodsCount);
+        //this.setState({goods[i].count});
+      }
     }
+    this.onIncreasingBasketCount = this.onIncreasingBasketCount.bind(this);
+  }
+  onIncreasingBasketCount(i){
+    // let goodsCount = this.state.goods[i].count++;
+    // console.log(goodsCount);
+    //this.setState({goods[i].count});
+  }
+  renderGoodsItem(i){
+    return <GoodsItem
+      kind = {this.state.goods[i].kind}
+      count = {this.state.goods[i].count}
+      onAdd = {this.onIncreasingBasketCount(i)}
+    />
   }
   render() {
     return (
       <div className="container">
         <div className="goods">
-          <GoodsItem kind = {this.state.goods[0].kind} count = {this.state.goods[0].count}/>
-          <GoodsItem kind = {this.state.goods[1].kind} count = {this.state.goods[1].count}/>
-          <GoodsItem kind = {this.state.goods[2].kind} count = {this.state.goods[2].count}/>
+          {this.renderGoodsItem(0)}
+          {this.renderGoodsItem(1)}
+          {this.renderGoodsItem(2)}
         </div>
         <div>
           <Basket/>

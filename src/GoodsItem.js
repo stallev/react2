@@ -2,19 +2,13 @@ import React, { Component } from 'react';
 import './GoodsItem.css';
 
 class GoodsItem extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      count: 0
-    }
-    this.onAddItemToBasket = this.onAddItemToBasket.bind(this);
-  }
-  onAddItemToBasket(e){
-    e.preventDefault();
-    //goodsCount= goodsCount++;
-    //this.setState({count:1});
-    //console.log(this.state.count);
-  }
+  
+  // onAddItemToBasket(e){
+  //   e.preventDefault();
+  //   //goodsCount= goodsCount++;
+  //   //this.setState({count:1});
+  //   //console.log(this.state.count);
+  // }
   render() {
     return (
       <div className="goods-item">
@@ -25,7 +19,7 @@ class GoodsItem extends Component {
         <span className="goods-item__number">
         Количество этого в корзине {this.props.count}
         </span>
-        <button className="goods-item__submit" onClick={this.onAddItemToBasket}>
+        <button className="goods-item__submit" onClick = {this.props.onAdd}>
           Купить
         </button>
       </div>
