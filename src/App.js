@@ -24,10 +24,11 @@ class App extends Component {
           count: 0
         }
       ],
-      onIncreasingBasketCount(i){
+      onIncreasingBasketCount(e, i){
+        e.preventDefault();
         let goodsCount = this.state.goods[i].count++;
+        //this.setState({this.state.goods[i].count:goodsCount})
         console.log(goodsCount);
-        //this.setState({goods[i].count});
       }
     }
     this.onIncreasingBasketCount = this.onIncreasingBasketCount.bind(this);
@@ -41,7 +42,7 @@ class App extends Component {
     return <GoodsItem
       kind = {this.state.goods[i].kind}
       count = {this.state.goods[i].count}
-      onAdd = {this.onIncreasingBasketCount(i)}
+      onAdd = {this.onIncreasingBasketCount}
     />
   }
   render() {
