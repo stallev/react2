@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './GoodsItem.css';
 
 class GoodsItem extends Component {
-  
+  static propTypes = {
+    kind: PropTypes.string.isRequired,
+    count: PropTypes.number.isRequired
+  };
   // onAddItemToBasket(e){
   //   e.preventDefault();
   //   //goodsCount= goodsCount++;
