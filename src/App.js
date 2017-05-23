@@ -37,19 +37,23 @@ class App extends Component {
   onIncreasingBasketCount(e){
     let cardIndex = +(e.target.parentNode.dataset.index);
     let updatedGoods = this.state.goods.map((item) => {
-      console.log(item.index);
       if(item.index === cardIndex){
         item.count = item.count+1;
         return item;
       }
       return item;
     });
-    console.log(updatedGoods);
     this.setState({goods:updatedGoods});
   }
   handleSubmitForm(){
     let updatedGoods = this.state.goods;
-    
+    updatedGoods.push({
+      key: document.getElementById('#goods-index').innerHTML,
+      index: document.getElementById('#goods-index').innerHTML,
+      kind: document.getElementById('#goods-name').innerHTML,
+      count: 0,
+      price: document.getElementById('#goods-price').innerHTML
+    });
     this.setState({goods:updatedGoods});
   }
   renderGoodsItem(){
@@ -68,7 +72,7 @@ class App extends Component {
   renderAddGoodForm(){
     return(
       <AddGoodForm
-      
+      onSubmitForm = {this.handleSubmitForm}
       />
     )
   }

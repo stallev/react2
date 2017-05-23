@@ -28,10 +28,10 @@ class AddGoodForm extends Component {
   }
   render() {
     return (
-      <div className="add-good-form">
-        <div className="add-good-form__title">
+      <form className="add-good-form">
+        <legend className="add-good-form__title">
           Форма добавления товара
-        </div>
+        </legend>
         <div className="add-good-form__item">
           <label htmlFor="#goods-name">
             Название товара
@@ -51,9 +51,9 @@ class AddGoodForm extends Component {
           <input type="number" id="#goods-price" value={this.state.price} onChange={this.handleChangePrice}/>
         </div>
         <div className="add-good-form__item">
-          <input type="submit" value="Добавить товар"/>
+          <input type="submit" value="Добавить товар" onClick={this.props.onSubmitForm}/>
         </div>
-      </div>
+      </form>
     );
   }
 }
