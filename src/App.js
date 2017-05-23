@@ -33,20 +33,18 @@ class App extends Component {
   }
   onIncreasingBasketCount(e){
     console.log(e);
-    //console.log(1);
     let cardIndex = e.target.parentNode.dataset.index;
-    console.log(cardIndex);
-    let updatedGoods = this.state.goods.map(function (item) {
-      if(item === cardIndex){
-        item.count++;
+    console.log(cardIndex); //определена верно
+    let updatedGoods = this.state.goods.map((item) => {
+      console.log(item.index);
+      if(item.index === cardIndex){
+        item.count = item.count+1;//но эта операция не происходит, из-за чего?
         return item;
       }
       return item;
     });
+    console.log(updatedGoods);
     this.setState({goods:updatedGoods});
-    // let goodsCount = this.state.goods[i].count++;
-    // console.log(goodsCount);
-    //this.setState({goods[i].count});
   }
   renderGoodsItem(){
     let goodsArray = [];
@@ -59,7 +57,6 @@ class App extends Component {
         onAdd = {this.onIncreasingBasketCount}
       />);
     });
-   
     return goodsArray;
   }
   render() {
