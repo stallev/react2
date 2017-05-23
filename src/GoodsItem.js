@@ -7,6 +7,9 @@ class GoodsItem extends Component {
     kind: PropTypes.string.isRequired,
     count: PropTypes.number.isRequired
   };
+  constructor(props){
+    super(props);
+  }
   render() {
     return (
       <div className="goods-item" data-index={this.props.index}>
