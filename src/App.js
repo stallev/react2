@@ -50,15 +50,16 @@ class App extends Component {
   }
   renderGoodsItem(){
     let goodsArray = [];
-    for(let i = 0; i < this.state.goods.length; i++) {
+    this.state.goods.map((i) => {
       goodsArray.push(<GoodsItem
-        key = {this.state.goods[i].index}
-        index = {this.state.goods[i].index}
-        kind = {this.state.goods[i].kind}
-        count = {this.state.goods[i].count}
+        key = {i.index}
+        index = {i.index}
+        kind = {i.kind}
+        count = {i.count}
         onAdd = {this.onIncreasingBasketCount}
       />);
-    }
+    });
+   
     return goodsArray;
   }
   render() {
