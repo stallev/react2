@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import GoodsItem from "./GoodsItem";
 import Basket from "./Basket";
+import AddGoodForm from "./AddGoodForm";
 
 class App extends Component {
   constructor(props){
@@ -30,20 +31,25 @@ class App extends Component {
     };
     this.onIncreasingBasketCount = this.onIncreasingBasketCount.bind(this);
     this.renderGoodsItem = this.renderGoodsItem.bind(this);
+    this.renderAddGoodForm = this.renderAddGoodForm.bind(this);
+    this.handleSubmitForm = this.handleSubmitForm.bind(this);
   }
   onIncreasingBasketCount(e){
-    console.log(e);
-    let cardIndex = e.target.parentNode.dataset.index;
-    console.log(cardIndex); //определена верно
+    let cardIndex = +(e.target.parentNode.dataset.index);
     let updatedGoods = this.state.goods.map((item) => {
       console.log(item.index);
       if(item.index === cardIndex){
-        item.count = item.count+1;//но эта операция не происходит, из-за чего?
+        item.count = item.count+1;
         return item;
       }
       return item;
     });
     console.log(updatedGoods);
+    this.setState({goods:updatedGoods});
+  }
+  handleSubmitForm(){
+    let updatedGoods = this.state.goods;
+    
     this.setState({goods:updatedGoods});
   }
   renderGoodsItem(){
@@ -59,11 +65,24 @@ class App extends Component {
     });
     return goodsArray;
   }
+  renderAddGoodForm(){
+    return(
+      <AddGoodForm
+      
+      />
+    )
+  }
   render() {
     return (
       <div className="container">
         <div className="goods">
           {this.renderGoodsItem()}
+        </div>
+        <div>
+        
+        </div>
+        <div>
+          {this.renderAddGoodForm()}
         </div>
         <div>
           <Basket/>
