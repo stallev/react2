@@ -4,7 +4,7 @@ import './css/GoodsItem.css';
 
 class GoodsItem extends Component {
   static propTypes = {
-    kind: PropTypes.string.isRequired
+    //kind: PropTypes.string.isRequired
   };
   constructor(props){
     super(props);

@@ -52,11 +52,11 @@ class App extends Component {
   handleSubmitForm(){
     let updatedGoods = this.state.goods;
     updatedGoods.push({
-      key: document.getElementById('#goods-index').innerHTML,
-      index: document.getElementById('#goods-index').innerHTML,
-      kind: document.getElementById('#goods-name').innerHTML,
+      key: Number(document.getElementById('#goods-index').value),
+      index: Number(document.getElementById('#goods-index').value),
+      kind: document.getElementById('#goods-name').value,
       count: 0,
-      price: document.getElementById('#goods-price').innerHTML
+      price: Number(document.getElementById('#goods-price').value)
     });
     this.setState({goods:updatedGoods});
   }
