@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './Basket.css';
+import './css/Basket.css';
 
 class Basket extends Component {
   constructor(props){
     super(props);
-    this.state ={
+    this.state = {
     
     }
   }
@@ -14,10 +14,8 @@ class Basket extends Component {
         <div className="basket__title">
           Корзина
         </div>
-        <div className="basket__row">
-          <div className="basket__item-name">
-          </div>
-          <div className="basket__count"></div>
+        <div className="basket__row-list">
+          {this.props.basketContent()}
         </div>
       </div>
     );

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
+import './css/App.css';
 import GoodsItem from "./GoodsItem";
 import Basket from "./Basket";
 import AddGoodForm from "./AddGoodForm";
+import BasketRow from "./BasketRow";
 
 class App extends Component {
   constructor(props){
@@ -33,6 +34,9 @@ class App extends Component {
     this.renderGoodsItem = this.renderGoodsItem.bind(this);
     this.renderAddGoodForm = this.renderAddGoodForm.bind(this);
     this.handleSubmitForm = this.handleSubmitForm.bind(this);
+    this.renderBasket = this.renderBasket.bind(this);
+    this.renderBasketRows = this.renderBasketRows.bind(this);
+    
   }
   onIncreasingBasketCount(e){
     let cardIndex = +(e.target.parentNode.dataset.index);
@@ -76,6 +80,27 @@ class App extends Component {
       />
     )
   }
+  renderBasket(){
+    return(
+      <Basket
+      basketContent = {this.renderBasketRows}
+      />
+    )
+  }
+  renderBasketRows(){
+    let basketRows = [];
+    this.state.goods.map((i) => {
+      if(i.count > 0){
+        basketRows.push(
+          <BasketRow
+            goodsTitle = {i.kind}
+            goodsCount = {i.count}
+          />
+        );
+      }
+    });
+    return basketRows;
+  }
   render() {
     return (
       <div className="container">
@@ -83,13 +108,10 @@ class App extends Component {
           {this.renderGoodsItem()}
         </div>
         <div>
-        
-        </div>
-        <div>
           {this.renderAddGoodForm()}
         </div>
         <div>
-          <Basket/>
+          {this.renderBasket()}
         </div>
       </div>
     );

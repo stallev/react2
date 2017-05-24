@@ -1,0 +1,25 @@
+.basket__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    box-sizing: border-box;
+}
+.basket-item__name{
+    padding: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+.basket-item__count{
+    padding: 5px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: right;
+}
+.basket__row:nth-child(even){
+    background-color: #9ed929;
+    color: #974cd9;
+}
+.basket__row:nth-child(odd){
+    background-color: #353dd9;
+    color: #d99b22;
+}
