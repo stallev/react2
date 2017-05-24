@@ -4,6 +4,7 @@
     background-color: dimgray;
     border: 2px solid green;
     border-radius: 5px;
+    margin-bottom: 50px;
 }
 .goods-item__image{
     display: block;
