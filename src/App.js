@@ -93,6 +93,7 @@ class App extends Component {
       if(i.count > 0){
         basketRows.push(
           <BasketRow
+            key = {i.index}
             goodsTitle = {i.kind}
             goodsCount = {i.count}
           />
