@@ -49,7 +49,7 @@ class App extends Component {
     });
     this.setState({goods:updatedGoods});
   }
-  handleSubmitForm(){
+  handleSubmitForm(e){
     let updatedGoods = this.state.goods;
     updatedGoods.push({
       key: Number(document.getElementById('#goods-index').value),
@@ -59,6 +59,7 @@ class App extends Component {
       price: Number(document.getElementById('#goods-price').value)
     });
     this.setState({goods:updatedGoods});
+    e.preventDefault();
   }
   renderGoodsItem(){
     let goodsArray = [];
