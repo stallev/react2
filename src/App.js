@@ -52,8 +52,7 @@ class App extends Component {
   handleSubmitForm(e){
     let updatedGoods = this.state.goods;
     updatedGoods.push({
-      key: Number(document.getElementById('#goods-index').value),
-      index: Number(document.getElementById('#goods-index').value),
+      index: updatedGoods.length,
       kind: document.getElementById('#goods-name').value,
       count: 0,
       price: Number(document.getElementById('#goods-price').value)
@@ -63,14 +62,16 @@ class App extends Component {
   }
   renderGoodsItem(){
     let goodsArray = [];
+    let increment = 0;
     this.state.goods.map((i) => {
       goodsArray.push(<GoodsItem
-        key = {i.index}
+        key = {increment}
         index = {i.index}
         kind = {i.kind}
         count = {i.count}
         onAdd = {this.onIncreasingBasketCount}
       />);
+      increment++;
     });
     return goodsArray;
   }
@@ -90,16 +91,18 @@ class App extends Component {
   }
   renderBasketRows(){
     let basketRows = [];
+    let increment = 0;
     this.state.goods.map((i) => {
       if(i.count > 0){
         basketRows.push(
           <BasketRow
-            key = {i.index}
+            key = {increment}
             goodsTitle = {i.kind}
             goodsCount = {i.count}
           />
         );
       }
+      increment++;
     });
     return basketRows;
   }

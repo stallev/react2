@@ -38,12 +38,7 @@ class AddGoodForm extends Component {
           </label>
           <input type="text" id="#goods-name" value={this.state.name} onChange={this.handleChangeName}/>
         </div>
-        <div className="add-good-form__item">
-          <label htmlFor="#goods-index">
-            Index
-          </label>
-          <input type="number" id="#goods-index" value={this.state.index} onChange={this.handleChangeIndex}/>
-        </div>
+        
         <div className="add-good-form__item">
           <label htmlFor="#goods-price">
             Цена товара
