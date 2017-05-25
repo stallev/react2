@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import './css/App.css';
 import GoodsItem from "./GoodsItem";
 import Basket from "./Basket";
@@ -137,6 +138,17 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <div className="menu">
+          <ul>
+            <li className="menu__item">
+              <Link to='/basket'>Basket</Link>
+            </li>
+            <li className="menu__item">
+              <Link to='/adding-form'>Form</Link>
+            </li>
+          </ul>
+        </div>
+        <div>{this.props.children}</div>
         <div className="goods">
           {this.renderGoodsItem()}
         </div>
