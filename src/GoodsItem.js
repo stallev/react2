@@ -13,6 +13,7 @@ class GoodsItem extends Component {
     return (
       <div className="goods-item" data-index={this.props.index}>
         <img className="goods-item__image" src="http://lorempixel.com/50/50/abstract/" alt="good item"/>
+        <img className="goods-item__delete-item" src="https://freeiconshop.com/wp-content/uploads/edd/cross-flat.png" onClick={this.props.onDelete}/>
         <div className="goods-item__name">
           {this.props.kind}
         </div>

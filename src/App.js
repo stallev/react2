@@ -36,8 +36,28 @@ class App extends Component {
     this.handleSubmitForm = this.handleSubmitForm.bind(this);
     this.renderBasket = this.renderBasket.bind(this);
     this.renderBasketRows = this.renderBasketRows.bind(this);
+    this.handleDeleteGoodItem = this.handleDeleteGoodItem.bind(this);
     
+    //service functions
+    this.componentDidMount = this.componentDidMount.bind(this);
+    this.componentDidUpdate = this.componentDidUpdate.bind(this);
+    this._updateLocalStorage = this._updateLocalStorage.bind(this);
   }
+  componentDidMount = function(){
+    let localGoods = JSON.parse(localStorage.getItem('goods'));
+    if (localGoods){
+      this.setState({
+        goods: localGoods
+      });
+    }
+  };
+  componentDidUpdate = function () {
+    this._updateLocalStorage();
+  }
+  _updateLocalStorage = function () {
+    let localGoods = JSON.stringify(this.state.goods);
+    localStorage.setItem('goods', localGoods);
+  };
   onIncreasingBasketCount(e){
     let cardIndex = +(e.target.parentNode.dataset.index);
     let updatedGoods = this.state.goods.map((item) => {
@@ -60,16 +80,24 @@ class App extends Component {
     this.setState({goods:updatedGoods});
     e.preventDefault();
   }
+  handleDeleteGoodItem (item){
+    let itemIndex = item.index;
+    let updatedGoods = this.state.goods.filter(function (item) {
+      return itemIndex !==item.index;
+    });
+    this.setState({goods:updatedGoods});
+  }
   renderGoodsItem(){
     let goodsArray = [];
     let increment = 0;
-    this.state.goods.map((i) => {
+    this.state.goods.map((item) => {
       goodsArray.push(<GoodsItem
         key = {increment}
-        index = {i.index}
-        kind = {i.kind}
-        count = {i.count}
+        index = {Date.now()}
+        kind = {item.kind}
+        count = {item.count}
         onAdd = {this.onIncreasingBasketCount}
+        onDelete = {this.handleDeleteGoodItem.bind(null, item)}
       />);
       increment++;
     });

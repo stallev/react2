@@ -1,4 +1,5 @@
 .goods-item{
+    position: relative;
     width: 250px;
     height: 220px;
     background-color: dimgray;
@@ -33,4 +34,12 @@
     box-sizing: border-box;
     background-color: aliceblue;
     outline: none;
+}
+.goods-item__delete-item{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
 }
