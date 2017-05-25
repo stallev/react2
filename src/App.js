@@ -5,6 +5,7 @@ import GoodsItem from "./GoodsItem";
 import Basket from "./Basket";
 import AddGoodForm from "./AddGoodForm";
 import BasketRow from "./BasketRow";
+import Goods from "./Goods";
 
 class App extends Component {
   constructor(props){
@@ -32,12 +33,13 @@ class App extends Component {
       ]
     };
     this.onIncreasingBasketCount = this.onIncreasingBasketCount.bind(this);
-    this.renderGoodsItem = this.renderGoodsItem.bind(this);
+    //this.renderGoodsItem = this.renderGoodsItem.bind(this);
     this.renderAddGoodForm = this.renderAddGoodForm.bind(this);
     this.handleSubmitForm = this.handleSubmitForm.bind(this);
     this.renderBasket = this.renderBasket.bind(this);
     this.renderBasketRows = this.renderBasketRows.bind(this);
     this.handleDeleteGoodItem = this.handleDeleteGoodItem.bind(this);
+    this.render = this.render.bind(this);
     
     //service functions
     this.componentDidMount = this.componentDidMount.bind(this);
@@ -88,22 +90,22 @@ class App extends Component {
     });
     this.setState({goods:updatedGoods});
   }
-  renderGoodsItem(){
-    let goodsArray = [];
-    let increment = 0;
-    this.state.goods.map((item) => {
-      goodsArray.push(<GoodsItem
-        key = {increment}
-        index = {item.index}
-        kind = {item.kind}
-        count = {item.count}
-        onAdd = {this.onIncreasingBasketCount}
-        onDelete = {this.handleDeleteGoodItem.bind(null, item)}
-      />);
-      increment++;
-    });
-    return goodsArray;
-  }
+  // renderGoodsItem(){
+  //   let goodsArray = [];
+  //   let increment = 0;
+  //   this.state.goods.map((item) => {
+  //     goodsArray.push(<GoodsItem
+  //       key = {increment}
+  //       index = {item.index}
+  //       kind = {item.kind}
+  //       count = {item.count}
+  //       onAdd = {this.onIncreasingBasketCount}
+  //       onDelete = {this.handleDeleteGoodItem.bind(null, item)}
+  //     />);
+  //     increment++;
+  //   });
+  //   return goodsArray;
+  // }
   renderAddGoodForm(){
     return(
       <AddGoodForm
@@ -135,6 +137,7 @@ class App extends Component {
     });
     return basketRows;
   }
+  
   render() {
     return (
       <div className="container">
@@ -149,9 +152,16 @@ class App extends Component {
           </ul>
         </div>
         <div>{this.props.children}</div>
-        <div className="goods">
-          {this.renderGoodsItem()}
+        <div>
+          <Goods
+            goods = {this.state.goods}
+            onAdd = {this.onIncreasingBasketCount}
+            onDelete = {this.handleDeleteGoodItem}
+          />
         </div>
+        {/*<div className="goods">*/}
+          {/*{this.renderGoodsItem()}*/}
+        {/*</div>*/}
         <div>
           {this.renderAddGoodForm()}
         </div>
