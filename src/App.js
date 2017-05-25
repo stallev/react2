@@ -93,7 +93,7 @@ class App extends Component {
     this.state.goods.map((item) => {
       goodsArray.push(<GoodsItem
         key = {increment}
-        index = {Date.now()}
+        index = {item.index}
         kind = {item.kind}
         count = {item.count}
         onAdd = {this.onIncreasingBasketCount}
