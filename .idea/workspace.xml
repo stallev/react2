@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9453d458-e53e-4572-a733-938306d55d98" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Goods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/Goods.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Goods" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/Goods.css'" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Goods" afterPath="$PROJECT_DIR$/src/Goods" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+            <state relative-caret-position="-1771">
+              <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#1480#1634#0" expanded="false" />
@@ -32,32 +35,27 @@
                 <element signature="n#!!block;n#handleSubmitForm#0;n#App#0" expanded="false" />
                 <element signature="n#!!block;n#renderAddGoodForm#0;n#App#0" expanded="false" />
                 <element signature="n#!!block;n#renderBasket#0;n#App#0" expanded="false" />
-                <element signature="n#!!block;n#renderBasketRows#0;n#App#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Goods" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Goods">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+      <file leaf-file-name="Goods.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Goods.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
-              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Goods.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css/Goods.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -335,12 +333,12 @@
       <workItem from="1495610709321" duration="11608000" />
       <workItem from="1495698521677" duration="9796000" />
       <workItem from="1495742843811" duration="7142000" />
-      <workItem from="1495786026855" duration="946000" />
+      <workItem from="1495786026855" duration="2499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78009000" />
+    <option name="totallyTimeSpent" value="79562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -381,34 +379,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#1480#1634#0" expanded="false" />
-            <element signature="e#1671#1708#0" expanded="false" />
-            <element signature="e#1745#1852#0" expanded="false" />
-            <element signature="n#!!block;n#onIncreasingBasketCount#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#handleSubmitForm#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#renderAddGoodForm#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#renderBasket#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#renderBasketRows#0;n#App#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GoodsItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -513,7 +483,6 @@
             <element signature="n#!!block;n#handleSubmitForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderAddGoodForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderBasket#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#renderBasketRows#0;n#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,7 +548,6 @@
             <element signature="n#!!block;n#handleSubmitForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderAddGoodForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderBasket#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#renderBasketRows#0;n#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -628,7 +596,6 @@
             <element signature="n#!!block;n#handleSubmitForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderAddGoodForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderBasket#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#renderBasketRows#0;n#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -690,7 +657,6 @@
             <element signature="n#!!block;n#handleSubmitForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderAddGoodForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderBasket#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#renderBasketRows#0;n#App#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,7 +788,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="390">
           <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -833,17 +799,15 @@
     <entry file="file://$PROJECT_DIR$/src/Goods">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
-          <caret line="26" column="21" lean-forward="false" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="35" column="6" lean-forward="true" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+        <state relative-caret-position="-1771">
+          <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#1480#1634#0" expanded="false" />
@@ -853,8 +817,23 @@
             <element signature="n#!!block;n#handleSubmitForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderAddGoodForm#0;n#App#0" expanded="false" />
             <element signature="n#!!block;n#renderBasket#0;n#App#0" expanded="false" />
-            <element signature="n#!!block;n#renderBasketRows#0;n#App#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Goods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/Goods.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
