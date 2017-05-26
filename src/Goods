@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './css/Goods.css';
+import GoodsItem from "./GoodsItem";
 
 class Goods extends Component {
   constructor(props){
