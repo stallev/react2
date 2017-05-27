@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9453d458-e53e-4572-a733-938306d55d98" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Goods.js" afterPath="$PROJECT_DIR$/src/Goods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Basket.js" afterPath="$PROJECT_DIR$/src/Basket.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,10 +21,9 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3328">
-              <caret line="164" column="14" lean-forward="false" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
+            <state relative-caret-position="156">
+              <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="36" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#366#723#0" expanded="false" />
                 <element signature="n#!!block;n#renderGoodsItem#0;n#App#0" expanded="false" />
               </folding>
@@ -33,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Goods.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Goods.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Goods.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1173">
-              <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            <state relative-caret-position="309">
+              <caret line="61" column="56" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="59" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -67,14 +65,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Basket.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Basket.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Basket.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="699">
+              <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasketRow.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BasketRow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,7 +110,6 @@
         <option value="$PROJECT_DIR$/src/AddGoodForm.css" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/Basket.css" />
-        <option value="$PROJECT_DIR$/src/Basket.js" />
         <option value="$PROJECT_DIR$/src/BasketRow.js" />
         <option value="$PROJECT_DIR$/src/BasketRow.css" />
         <option value="$PROJECT_DIR$/src/css/App.css" />
@@ -111,8 +118,9 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/Goods" />
         <option value="$PROJECT_DIR$/src/GoodsItem.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Goods.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/Basket.js" />
       </list>
     </option>
   </component>
@@ -321,12 +329,12 @@
       <workItem from="1495742843811" duration="7142000" />
       <workItem from="1495786026855" duration="4194000" />
       <workItem from="1495827180284" duration="1607000" />
-      <workItem from="1495872026014" duration="15047000" />
+      <workItem from="1495872026014" duration="17294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97911000" />
+    <option name="totallyTimeSpent" value="100158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -471,7 +479,6 @@
         <state relative-caret-position="1352">
           <caret line="52" column="61" lean-forward="true" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
             <element signature="e#366#723#0" expanded="false" />
             <element signature="n#!!block;n#renderGoodsItem#0;n#App#0" expanded="false" />
           </folding>
@@ -531,7 +538,6 @@
         <state relative-caret-position="832">
           <caret line="32" column="2" lean-forward="false" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
             <element signature="e#366#723#0" expanded="false" />
             <element signature="n#!!block;n#renderGoodsItem#0;n#App#0" expanded="false" />
           </folding>
@@ -574,7 +580,6 @@
         <state relative-caret-position="676">
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
             <element signature="e#366#723#0" expanded="false" />
             <element signature="n#!!block;n#renderGoodsItem#0;n#App#0" expanded="false" />
           </folding>
@@ -630,7 +635,6 @@
         <state relative-caret-position="312">
           <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
             <element signature="e#366#723#0" expanded="false" />
             <element signature="n#!!block;n#renderGoodsItem#0;n#App#0" expanded="false" />
           </folding>
@@ -696,13 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BasketRow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -744,10 +741,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Basket.js">
+    <entry file="file://$PROJECT_DIR$/src/BasketRow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+        <state relative-caret-position="390">
+          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="36" />
+          <folding>
+            <element signature="e#366#723#0" expanded="false" />
+            <element signature="n#!!block;n#renderGoodsItem#0;n#App#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GoodsItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -762,32 +778,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GoodsItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3328">
-          <caret line="164" column="14" lean-forward="false" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#366#723#0" expanded="false" />
-            <element signature="n#!!block;n#renderGoodsItem#0;n#App#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Goods.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1173">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="309">
+          <caret line="61" column="56" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Basket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="699">
+          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
