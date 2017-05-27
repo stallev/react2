@@ -7,6 +7,7 @@ import './css/index.css';
 
 import Basket from './Basket';
 import AddGoodForm from './AddGoodForm';
+import Goods from './Goods';
 
 
 ReactDOM.render(
@@ -14,6 +15,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <Route path="/basket" component={Basket}/>
       <Route path="/adding-form" component={AddGoodForm}/>
+      <Route path="/goods-list" component={Goods}/>
     </Route>
   </Router>,
   document.getElementById('root')

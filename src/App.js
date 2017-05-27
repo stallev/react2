@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import './css/App.css';
+import './css/Menu.css';
 import GoodsItem from "./GoodsItem";
 import Basket from "./Basket";
 import AddGoodForm from "./AddGoodForm";
 import BasketRow from "./BasketRow";
 import Goods from "./Goods";
+import Menu from "./Menu";
 
 class App extends Component {
   constructor(props){
@@ -38,6 +40,7 @@ class App extends Component {
     this.handleSubmitForm = this.handleSubmitForm.bind(this);
     this.renderGoods = this.renderGoods.bind(this);
     this.renderBasket = this.renderBasket.bind(this);
+    this.renderMenu = this.renderMenu.bind(this);
     this.renderBasketRows = this.renderBasketRows.bind(this);
     this.handleDeleteGoodItem = this.handleDeleteGoodItem.bind(this);
     this.render = this.render.bind(this);
@@ -90,6 +93,11 @@ class App extends Component {
       return itemIndex !==item.index;
     });
     this.setState({goods:updatedGoods});
+  }
+  renderMenu(){
+    return(
+      <Menu/>
+    )
   }
   renderGoodsItem(){
     let goodsArray = [];
@@ -150,28 +158,21 @@ class App extends Component {
     return (
       <div className="container">
         <div className="menu">
-          <ul>
-            <li className="menu__item">
-              <Link to='/basket'>Basket</Link>
-            </li>
-            <li className="menu__item">
-              <Link to='/adding-form'>Form</Link>
-            </li>
-          </ul>
+          {this.renderMenu()}
         </div>
         <div>{this.props.children}</div>
-        <div>
-          {this.renderGoods()}
-        </div>
-        <div className="goods">
-        {this.renderGoodsItem()}
-        </div>
-        <div>
-          {this.renderAddGoodForm()}
-        </div>
-        <div>
-          {this.renderBasket()}
-        </div>
+        {/*<div>*/}
+          {/*{this.renderGoods()}*/}
+        {/*</div>*/}
+        {/*<div className="goods">*/}
+        {/*{this.renderGoodsItem()}*/}
+        {/*</div>*/}
+        {/*<div>*/}
+          {/*{this.renderAddGoodForm()}*/}
+        {/*</div>*/}
+        {/*<div>*/}
+          {/*{this.renderBasket()}*/}
+        {/*</div>*/}
       </div>
     );
   }
