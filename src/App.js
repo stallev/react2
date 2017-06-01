@@ -161,18 +161,18 @@ class App extends Component {
           {this.renderMenu()}
         </div>
         <div>{this.props.children}</div>
-        {/*<div>*/}
-          {/*{this.renderGoods()}*/}
-        {/*</div>*/}
-        {/*<div className="goods">*/}
-        {/*{this.renderGoodsItem()}*/}
-        {/*</div>*/}
-        {/*<div>*/}
-          {/*{this.renderAddGoodForm()}*/}
-        {/*</div>*/}
-        {/*<div>*/}
-          {/*{this.renderBasket()}*/}
-        {/*</div>*/}
+        <div>
+          {this.renderGoods()}
+        </div>
+        <div className="goods">
+        {this.renderGoodsItem()}
+        </div>
+        <div>
+          {this.renderAddGoodForm()}
+        </div>
+        <div>
+          {this.renderBasket()}
+        </div>
       </div>
     );
   }

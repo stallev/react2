@@ -28,9 +28,10 @@ class Menu extends Component {
   }
   render() {
     let links = [];
-    this.state.menu.map((link) => {
+    this.state.menu.map((link, index) => {
       links.push(
         <LinkItem
+          key = {index}
           path = {link.path}
           name = {link.name}
         />

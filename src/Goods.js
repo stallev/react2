@@ -6,7 +6,26 @@ class Goods extends Component {
   constructor(props){
     super(props);
     this.state = {
-      goods: JSON.parse(localStorage.getItem('goods'))
+      goods: [
+        {
+          index: 0,
+          kind: "firstKind",
+          price: 0,
+          count: 0
+        },
+        {
+          index: 1,
+          kind: "secondKind",
+          price: 0,
+          count: 0
+        },
+        {
+          index: 2,
+          kind: "thirdKind",
+          price: 0,
+          count: 0
+        }
+      ]
     };
     
     this.onIncreasingBasketCount = this.onIncreasingBasketCount.bind(this);
@@ -59,7 +78,8 @@ class Goods extends Component {
   }
   render() {
     let goodsArray = [];
-    let goods1 = JSON.parse(localStorage.getItem('goods'));
+    // let goods1 = JSON.parse(localStorage.getItem('goods'));
+    let goods1 = this.state.goods;
     let increment = 0;
     goods1.map((item) => {
       goodsArray.push(<GoodsItem
